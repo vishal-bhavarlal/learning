@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+
+  <body>
+    <h1>This is a Heading Anisha</h1>
+    <p>This is a paragraph. PAtel</p>
+    <b>This text is bold</b>
+    <h1 style="font-size: 45px">Heading two </h1>
+    
+    <p>This is another paragraph.</p>
+    
+
+    <p>
+      This is a <br />
+      paragraph with a line break.
+    </p>
+
+    <p>img src="img_girl.jpg" width="60" height="90"</p>
+    <p style="color: rgba(160, 183, 41, 0.524)">This is a rgba paragraph.</p>
+    <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+    <img src="img_girl.jpg" alt="Girl with a jacket" />
+    <p style="font-size: 32px; color: rgb(5, 4, 4)">I am Black</p>
+    <h1 style="font-size: 300%; color: rgba(128, 60, 192, 0.75)">
+      This is a heading
+      <p style="font-size: 160%; color: springgreen">This is a paragraph.</p>
+      <h1
+        style="
+          background-color: rgba(233, 70, 21, 0.735);
+          font-size: 210%;
+          color: green;
+        "
+      >
+        apple is green.
+      </h1>
+      <h1 style="background-color: powderblue">This is a heading</h1>
+      <p
+        style="
+          font-size: 190%;
+          color: rgb(7, 8, 8);
+          background-color: rgba(134, 18, 18, 0.466);
+        "
+      >
+        This is a paragraph.
+      </p>
+
+      <h1
+        style="background-color:black;(233, 70, 21, 0.735);font-size:210%;color:green;text-align:center;"
+    </h1>
+      <h2 stile=" font-size:600%" >Centered Heading </h2>
+      
+      <p
+        style="
+          text-align: center;
+          font-size: 90%;
+          background-color: red;
+          color: aqua;
+        "
+      >
+        Centered paragraph.
+      </p>
+      <b
+        style="
+          background-color: rgba(233, 70, 21, 0.735);
+          font-size: 500%;
+          color: rgb(10, 11, 10);
+        "
+        >apple .</b
+      >
+      <p><i>This text is italic.</i></p>
+
+      p>Do not forget to buy <mark>milk</mark> today.</p>
+      <p stile="background-color:green;font-size:664%;"><mark>small</mark></p>
+     
+
+      <p>Here is a quote from WWF's website:</p>
+
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+      </blockquote>
+     <bdo dir="rtl">welcome</bdo>
+   <h1 style="border: 2px solid green;">This is a heading</h1>
+    <h1 style="background-color:#33ff32">green</h1>
+  <h1 style="background-color:hsl(0,100%,50%);">red</h1>
+  <h1 style="background-color:hsl(240, 100%, 50%);">blue</h1>
+  <h1 style="background-color:rgb(243, 3, 231)">pink</h1>
+ <style>body{background-color:rgba(10, 239, 255, 0.896);}</style>
+ <style>
+  p {
+    border: 2px solid rgb(255, 102, 0);}
+  </style>
+<style>
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  </style>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+  </html>
