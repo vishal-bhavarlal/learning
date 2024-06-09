@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table width="100%" border="1">
+        <tr>
+            <td colspan="2" bgcolor=" blue">
+                <center>
+                    <h1>[thefacebook]</h1>
+                    <h2><button class="btn success">home</button>
+                        <button class="btn info">search</button>
+                        <button class="btn warning">global</button>
+                        <button class="btn danger">social net</button>
+                        <button class="btn default">invite</button>
+                        <button class="btn danger">faq</button>
+                        <button class="btn default">logout</button>
+                    </h2>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%" height="500" bgcolor="skyblue">
+                <h1>
+                    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                        <input type="text" placeholder="Search.." name="search2">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </h1>
+                <h2><button onclick="scrollWin()" style="position:fixed">my profile [edit]</button>
+                    <br><br>
+                    <button onclick="scrollWin()" style="position:fixed">my Group</button>
+                    <br><br>
+                    <button onclick="scrollWin()" style="position:fixed">my parties</button>
+                    <br><br>
+                    <button onclick="scrollWin()" style="position:fixed">my massages</button>
+                    <br><br>
+                    <button onclick="scrollWin()" style="position:fixed">my Account</button>
+                    <br><br>
+                    <button onclick="scrollWin()" style="position:fixed">my privacy</button>
+                    <br><br>
+                </h2>
+
+                <video width="500" height="270" controls>
+                    <source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+            </td>
+            <td width=" 70%" height="500" bgcolor="skyblue">
+                <div style="float: left;width: 50%;">
+                    <h1 style="text-align:start;font-size:larger;background: #0354f6ef;color: rgb(252, 252, 252);">brian
+                        moore's profile</h1>
+                    <center>
+                        <h2 style="color: rgb(255, 255, 255);background: #0354f6ef;font-size: larger;">picture</h2>
+                        <h3><img src="img_girl.jpg" alt="Girl in a jacket" width="350" height="250">
+                        </h3>
+                    </center>
+                </div>
+                <div style="float: left;width: 50%;>
+                  <h1 style=" text-align:start;font-size:larger;background: #0354f6ef;color: rgb(252, 252, 252);">brian
+                    moore's profile</h1>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%" colspan="2" bgcolor="skyblue">
+                <h1>
+                    <p>&#128519;</p>
+                </h1>
+            </td>
+        </tr>
+    </table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

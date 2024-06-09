@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<title>facebook page</title>
+</head>
+
+<body style="background-color: rgba(81, 177, 250, 0.943);">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <header>
+        <div style="background-color:rgb(68, 123, 234);color:white;padding:20px;">
+            <h1 style="color:rgb(48, 68, 221) ;background-color:rgb(68, 123, 234);text-align:center">[the
+                facebook]</h1>
+
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                    body {
+                        font-family: Arial;
+                    }
+
+                    /* Style the tab */
+                    .tab {
+                        overflow: hidden;
+                        border: 1px solid #ccc;
+                        background-color: #f1f1f1;
+                    }
+
+                    /* Style the buttons inside the tab */
+                    .tab button {
+                        background-color: inherit;
+                        float: left;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 14px 16px;
+                        transition: 0.3s;
+                        font-size: 17px;
+                    }
+
+                    /* Change background color of buttons on hover */
+                    .tab button:hover {
+                        background-color: #ddd;
+                    }
+
+                    /* Create an active/current tablink class */
+                    .tab button.active {
+                        background-color: #ccc;
+                    }
+
+                    /* Style the tab content */
+                    .tabcontent {
+                        display: none;
+                        padding: 6px 12px;
+                        border: 1px solid #ccc;
+                        border-top: none;
+                    }
+                </style>
+            </head>
+
+
+            <div class="tab">
+                <div style="background-color:rgb(68,123,234);text-align:end">
+                    <button class="tablinks" onclick="openCity(event, 'home')">home</button>
+                    <button class="tablinks" onclick="openCity(event, 'search')">search</button>
+                    <button class="tablinks" onclick="openCity(event, 'global')">global</button>
+                    <button class="tablinks" onclick="openCity(event, 'social net')">social net</button>
+                    <button class="tablinks" onclick="openCity(event, 'invite')">invite</button>
+                    <button class="tablinks" onclick="openCity(event, 'faq')">faq</button>
+                    <button class="tablinks" onclick="openCity(event, 'logout')">logout</button>
+
+                    </style>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <style>
+                    form.example input[type=text] {
+                        padding: 10px;
+                        font-size: 17px;
+                        border: 1px solid grey;
+                        float: end;
+                        width: 80%;
+                        background: #f1f1f1;
+                    }
+                </style>
+
+                <form class="example" action="/action_page.php" style="margin:auto;max-width:300px;">
+                    <input type="text" placeholder="Search.." name="search2"><button type="submit"><i
+                            class="fa fa-search"></i></button>
+                </form>
+                </div>
+            </ul>
+        </nav>
+        <article>
+            <h1 style="background-color:rgb(68, 123, 234);text-align:left;">brian moore's
+                profile___________________________________________sound</h1>
+
+    </section>
+    <section>
+        <nav>
+            <h1>image</h1>
+        </nav>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
